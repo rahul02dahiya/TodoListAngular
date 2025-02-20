@@ -1,20 +1,13 @@
 .navbar{
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.857);
     margin: 4px 5%;
-    border: 2px solid rgb(207, 184, 255);
+    border: 2px solid rgb(198, 239, 255);
     border-radius: 30px;
     height: 60px;
     padding: 2px;
-}
-
-.logout-btn{
-    margin-left: auto;
-    font-size: 20px;
-    color: #5f6bed;
-    margin-right: 20px ;
-    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    gap: 10px;
 }
 
 .logo{
@@ -27,8 +20,10 @@
     object-fit: fill;
 }
 
-.wordmark{
-    color: #fff;
+#wordmark{
+    color: #0059ff;
     font-size: 20px;
+    font-weight: bolder;
     font-family: monospace ;
+    margin-right: auto;
 }

@@ -9,6 +9,12 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { HomeComponent } from './components/home/home.component';
 import { AddCategoryComponent } from './components/add-category/add-category.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { AuthService } from './services/auth.service';
+import { CategoryDropdownComponent } from './components/category-dropdown/category-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +24,18 @@ import { AddTodoComponent } from './components/add-todo/add-todo.component';
     RegistrationComponent,
     HomeComponent,
     AddCategoryComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    CategoryDropdownComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, 
+    RouterModule, 
+    CommonModule, 
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

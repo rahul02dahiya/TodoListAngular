@@ -1,16 +1,8 @@
-
-<main>
-
+<div class="main">
     <app-header></app-header>
 
-    <div class="home-body mx-5">
-        <section id="category-section">
-           
-            <div>category 1</div>
-            <div>category 2</div>
-            <div>category 3</div>
-        </section>
-        <section id="todo-section">todo</section>
+    <div class="container">
+        <app-category-dropdown *ngFor="let category of categories" [category]="category"></app-category-dropdown>
     </div>    
-
-</main>
+    
+</div>

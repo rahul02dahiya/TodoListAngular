@@ -8,6 +8,7 @@
     padding: 2px;
     list-style-type: none;
     gap: 10px;
+    position: sticky;
 }
 
 .logo{
